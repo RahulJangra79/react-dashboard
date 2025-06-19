@@ -24,8 +24,13 @@ import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import ThemeSettings from "./components/ThemeSettings";
 
+import { useStateContext } from "./contexts/ContextProvider";
+
+
 const App = () => {
-  const activeMenu = true;
+
+  const { activeMenu } = useStateContext();
+  
   return (
     <div>
       <BrowserRouter>
