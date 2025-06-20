@@ -13,7 +13,7 @@ import Area from "./pages/Charts/Area";
 import Line from "./pages/Charts/Line";
 import Kanban from "./pages/Kanban";
 import Editor from "./pages/Editor";
-import Calender from "./pages/Calender";
+import Calendar from "./pages/Calendar";
 import ColorPicker from "./pages/ColorPicker";
 import Orders from "./pages/Orders";
 import Employees from "./pages/Employees";
@@ -76,7 +76,7 @@ const App = () => {
                 {/* Apps */}
                 <Route path="/kanban" element={<Kanban />} />
                 <Route path="/editor" element={<Editor />} />
-                <Route path="/calender" element={<Calender />} />
+                <Route path="/calendar" element={<Calendar />} />
                 <Route path="/color-picker" element={<ColorPicker />} />
                 {/* Charts */}
                 <Route path="/line" element={<Line />} />
