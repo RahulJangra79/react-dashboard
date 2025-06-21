@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import "./App.css";
-import Pie from "./components/Charts/Pie";
+import Pie from "./pages/Charts/Pie";
 import Stacked from "./components/Charts/Stacked";
 import Pyramid from "./pages/Charts/Pyramid";
 import ColorMapping from "./pages/Charts/ColorMapping";
@@ -91,6 +91,7 @@ const App = () => {
                 <Route path="/stacked" element={<Stacked />} />
               </Routes>
             </div>
+            <Footer />
           </div>
         </div>
       </BrowserRouter>
