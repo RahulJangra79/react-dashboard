@@ -4,7 +4,7 @@ import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import "./App.css";
 import Pie from "./pages/Charts/Pie";
-import Stacked from "./components/Charts/Stacked";
+import Stacked from "./pages/Charts/Stacked";
 import Pyramid from "./pages/Charts/Pyramid";
 import ColorMapping from "./pages/Charts/ColorMapping";
 import Financial from "./pages/Charts/Financial";

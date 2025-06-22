@@ -1,10 +1,7 @@
 import React from "react";
 import { BsCurrencyDollar } from "react-icons/bs";
-
-// import { GoPrimitiveDot } from "react-icons/go";
 import { GoDotFill } from "react-icons/go";
-
-import { Stacked, Pie, Button, SparkLine } from "../components";
+import { Pie, Button, SparkLine, StackedChart } from "../components";
 import {
   earningData,
   SparklineAreaData,
@@ -46,16 +43,17 @@ const Ecommerce = () => {
           </div>
         </div>
 
-        <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-4 m-3">
           {earningData.map((item) => (
             <div
               key={item.title}
-              className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56 p-4 pt-9 rounded-2xl"
+              className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg p-4 pt-9 rounded-2xl min-w-[140px] w-full"
             >
               <button
                 type="button"
                 style={{ color: item.iconColor, backgroundColor: item.iconBg }}
-                className="text-2xl opacity-0.9 rounded-full p-4 hover:drop-shadow-xl"
+                className="text-2xl opacity-90 rounded-full p-4 hover:drop-shadow-xl"
               >
                 {item.icon}
               </button>
@@ -133,7 +131,7 @@ const Ecommerce = () => {
               </div>
             </div>
             <div>
-              <Stacked width="320px" height="360px" />
+              <StackedChart width="320px" height="360px" />
             </div>
           </div>
         </div>
