@@ -1,6 +1,5 @@
 import React from 'react';
-import { MdOutlineCancel } from 'react-icons/md';
-
+import { RxCross2 } from "react-icons/rx";
 import { Button } from '.';
 import { chatData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
@@ -18,7 +17,7 @@ const Chat = () => {
           </button>
         </div>
         <Button
-          icon={<MdOutlineCancel />}
+          icon={<RxCross2 />}
           color="rgb(153, 171, 180)"
           bgHoverColor="light-gray"
           size="2xl"

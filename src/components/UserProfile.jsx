@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdOutlineCancel } from 'react-icons/md';
+import { RxCross2 } from "react-icons/rx";
 
 import { Button } from '.';
 import { userProfileData } from '../data/dummy';
@@ -14,7 +14,7 @@ const UserProfile = () => {
       <div className="flex justify-between items-center">
         <p className="font-semibold text-lg dark:text-gray-200">User Profile</p>
         <Button
-          icon={<MdOutlineCancel />}
+          icon={<RxCross2 />}
           color="rgb(153, 171, 180)"
           bgHoverColor="light-gray"
           size="2xl"

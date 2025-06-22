@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdOutlineCancel } from 'react-icons/md';
+import { RxCross2 } from "react-icons/rx";
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 
 import { useStateContext } from '../contexts/ContextProvider';
@@ -15,7 +15,7 @@ const Cart = () => {
         <div className="flex justify-between items-center">
           <p className="font-semibold text-lg">Shopping Cart</p>
           <Button
-            icon={<MdOutlineCancel />}
+            icon={<RxCross2 />}
             color="rgb(153, 171, 180)"
             bgHoverColor="light-gray"
             size="2xl"
